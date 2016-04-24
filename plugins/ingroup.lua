@@ -642,7 +642,7 @@ local function realmadd(msg)
 	return
   end
   if not is_admin1(msg) then
-    return "شنا ادمین نیستید"
+    return "شما ادمین نیستید"
   end
   local data = load_data(_config.moderation.data)
   if is_realm(msg) then
@@ -1251,7 +1251,7 @@ end
 			return lock_group_bots(msg, data, target)
 		end
 		if matches[2] == 'خروج' then
-			savelog(msg.to.id, name_log.." ["..msg.from.id.."] خروج=بن ")
+			savelog(msg.to.id, name_log.." ["..msg.from.id.."] خروج بن")
 			return lock_group_leave(msg, data, target)
 		end
 		if matches[2] == 'تبلیغات' then
