@@ -1251,7 +1251,7 @@ end
 			return lock_group_bots(msg, data, target)
 		end
 		if matches[2] == 'خروج' then
-			savelog(msg.to.id, name_log.." ["..msg.from.id.."] خروج بن ")
+			savelog(msg.to.id, name_log.." ["..msg.from.id.."] از گروه بروند بن نخواهند شد ")
 			return lock_group_leave(msg, data, target)
 		end
 		if matches[2] == 'تبلیغات' then
